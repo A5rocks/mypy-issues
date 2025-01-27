@@ -60,4 +60,7 @@ if __name__ == "__main__":
   # save 1 core unless this is on GHA
   min_cores = min(multiprocessing.cpu_count(), 4)
   with multiprocessing.Pool(max(multiprocessing.cpu_count() - 1, min_cores)) as pool:
-    pool.map(process, here.glob("**/blocks.json"))
+    files = here.glob("**/blocks.json")
+    files = sorted(files, key=lambda f: len(open(f).read()), reverse=True
+
+    pool.map(process, files)
