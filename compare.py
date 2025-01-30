@@ -5,7 +5,7 @@
 # $ venv1/bin/pip install git+https://github.com/python/mypy.git
 # $ venv2/bin/pip install git+https://github.com/A5rocks/mypy.git@[whatever]
 # such as:
-# $ venv2/bin/pip install git+https://github.com/python/mypy.git@refs/pull/[whatever]/head
+# $ venv2/bin/pip install git+https://github.com/python/mypy.git@refs/pull/[whatever]/merge
 
 # for mypyc, just have these env variables: CC=clang MYPYC_OPT_LEVEL=2 MYPY_USE_MYPYC=1
 

@@ -46,7 +46,7 @@ $ python -m venv venv2
 $ ./venv1/bin/pip install git+https://github.com/python/mypy.git
 $ ./venv2/bin/pip install git+https://github.com/[you]/mypy.git@[whatever]
 # get a specific PR with:
-$ ./venv2/bin/pip install git+https://github.com/python/mypy.git@refs/pull/[whatever]/head
+$ ./venv2/bin/pip install git+https://github.com/python/mypy.git@refs/pull/[whatever]/merge
 
 # ... and finally:
 $ python compare.py
